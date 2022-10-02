@@ -4,7 +4,7 @@
     border: 2px solid;
     box-shadow: 0 0 0 2px;
     line-height: 75px;
-    font-size: 50px;
+    font-size: 40px;
     cursor: pointer;
     color: white;
 }
@@ -15,7 +15,7 @@
 #cellContainer{
     display: grid;
     grid-template-columns: repeat(3, auto);
-    width: 225px;
+    width: 200px;
     margin: auto;
 }
 body{
@@ -24,99 +24,80 @@ body{
 
 #statusText{
     color: yellow;
+    font-size: 21px;
 }
 #h1{
     color: white;
+    font-size: 33px;
 }
 #resetBtn{
     color: green;
     border: 2px solid;
-    width: 100px;
-    height: 50px;
-    font-size: 18px;
+    width: 90px;
+    height: 37px;
+    font-size: 16px;
     cursor: pointer;
+    border-radius: 10%;
+    text-align: center;
 }
-@media (max-width: 1200px){/*Desktop laptop-992, Tablet-768, mobile-576*/
-    h1{
-        font-size: 50px;
+@media (max-width: 311px){
+    #h1{
+        visibility: hidden;
     }
-    #cellContainer{
-        width: 240px;
-        line-height: 135px;
-        font-size: 90px;
-    }
-    #statusText{
-        font-size: 30px;
-    }
-    #resetBtn{
-        color: green;
-        border: 4px solid;
-        width: 150px;
-        height: 50px;
-        font-size: 30px;
-        cursor: pointer;
-    }
-}
-@media (max-width: 992px){
-    h1{
-        font-size: 40px;
-    }
-    #cellContainer{
-        width: 240px;
+    .cell{
+        width: 65px;
+        height: 65px;
+        border: 2px solid;
+        box-shadow: 0 0 0 2px;
         line-height: 65px;
-        font-size: 30px;
-    }
-    #statusText{
-        font-size: 30px;
-    }
-    #resetBtn{
-        color: green;
-        border: 4px solid;
-        width: 100px;
-        height: 50px;
-        font-size: 20px;
-        cursor: pointer;
-    }
-}
-@media (max-width: 768px){
-    h1{
         font-size: 35px;
+        cursor: pointer;
+        color: black;
     }
-    #cellContainer{
-        width: 235px;
-        line-height: 60px;
-        font-size: 25px;
+    body{
+        background-color: lightblue;
     }
     #statusText{
-        font-size: 25px;
+        color: black;
+        font-size: 21px;
     }
     #resetBtn{
-        color: green;
-        border: 4px solid;
-        width: 100px;
-        height: 40px;
-        font-size: 15px;
+        color: yellow;
+        background-color: black;
+        border: 2px solid;
+        width: 76px;
+        height: 30px;
+        font-size: 14px;
         cursor: pointer;
+        border-radius: 7%;
+        text-align: center;
     }
-}
-@media (max-width: 576px){
-    h1{
-        font-size: 25px;
-    }
-    #cellContainer{
-        width: 150px;
-        line-height: 50px;
-        font-size: 15px;
+}    
+
+@media (max-width: 239px){
+    #resetBtn{
+        color: yellow;
+        background-color: black;
+        border: 2px solid;
+        width: 50px;
+        height: 23px;
+        font-size: 10px;
+        cursor: pointer;
+        border-radius: 4%;
+        text-align: center;
     }
     #statusText{
-        font-size: 20px;
+        color: black;
+        font-size: 16px;
     }
-    #resetBtn{
-        color: green;
-        border: 4px solid;
-        width: 100px;
-        height: 40px;
-        font-size: 15px;
+    .cell{
+        width: 65px;
+        height: 65px;
+        border: 2px solid;
+        box-shadow: 0 0 0 2px;
+        line-height: 55px;
+        font-size: 25px;
         cursor: pointer;
+        color: black;
     }
 }
